@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Plan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Your Smart Study Plan</h1>
+  {% for day in plan %}
+    <h3>Day {{ day.day }}</h3>
+    <ul>
+      {% for task in day.tasks %}
+        <li>{{ task.subject }}: {{ task.hours }} hrs</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  <a href="/materials">→ Go to Material Organizer</a>
+</body>
+</html>

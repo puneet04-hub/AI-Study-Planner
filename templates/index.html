@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Planner AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>📚 Study Planner AI</h1>
+  <form action="/submit" method="post">
+    <label>Total Days Left:</label>
+    <input type="number" name="days" required><br><br>
+
+    <div id="subject-container">
+      <div class="subject">
+        <input type="text" name="subject[]" placeholder="Subject Name" required>
+        <input type="number" name="priority[]" placeholder="Priority (1-5)" required>
+        <input type="number" name="completion[]" placeholder="Completed % (0-100)" required>
+      </div>
+    </div>
+
+    <button type="button" onclick="addSubject()">+ Add More Subject</button><br><br>
+    <input type="submit" value="Generate Plan">
+  </form>
+
+  <script>
+    function addSubject() {
+      let container = document.getElementById('subject-container');
+      let newDiv = document.createElement('div');
+      newDiv.className = 'subject';
+      newDiv.innerHTML = `
+        <input type="text" name="subject[]" placeholder="Subject Name" required>
+        <input type="number" name="priority[]" placeholder="Priority (1-5)" required>
+        <input type="number" name="completion[]" placeholder="Completed % (0-100)" required>
+      `;
+      container.appendChild(newDiv);
+    }
+  </script>
+</body>
+</html>

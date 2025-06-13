@@ -1,0 +1,102 @@
+{
+    "days": 10,
+    "subjects": [
+        {
+            "name": "Operating System",
+            "priority": 1,
+            "completion": 0
+        }
+    ],
+    "plan": [
+        {
+            "day": 1,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 2,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 3,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 4,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 5,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 6,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 7,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 8,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 9,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        },
+        {
+            "day": 10,
+            "tasks": [
+                {
+                    "subject": "Operating System",
+                    "hours": 6.0
+                }
+            ]
+        }
+    ]
+}
